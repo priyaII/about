@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
   <title>Priya</title>
-  <link rel="stylesheet" type="text/css" href="/themes/fonts/prox/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="./themes/fonts/prox/fonts.css" />
             <!-- url - https://github.com/elliakou/proxima-nova-web-fonts
             for unminified version add this
             <link rel="stylesheet" type="text/css" href="/path/to/your/fonts/folder/fonts.css" />
@@ -10,17 +10,26 @@
 
 
   <style>
+    #header{
+      font-family: 'proxima_nova_altbold';
+    }
+
+    #body {
+      font-family: 'Proxima Nova';
+    }
     body{
       background:#01afd1 ;
 
       color: white;
       text-align: center;
-      font-family: 'Proxima Nova', Georgia, sans-serif;
-
       /* Background Images
       background:url("/themes/images/...")
       background-size:cover;
       background-position : center;*/
+    }
+
+    p{
+      font-size:22px;
     }
 
     input{
@@ -33,13 +42,37 @@
       color: white;
       background: #006f85;
     }
+
+    /*styling The header*/
+    ul{
+      padding:10px;
+    }
+
+    li{
+      display:inline;
+      padding: 0px 10px 0px 10px;
+    }
+
+    #dp{
+      /*border: 20px solid #006f85;*/
+      border-radius:100px;
+    }
   </style>
 </head>
 <body>
-  <img src="./themes/images/face0.jpg"> Priya </img>
-  <p>Hi! I'm Priya, a Bangalore-based marketer</p>
-  <input type="email" placeholder="Your email">
-  <input type="submit">
+  <div id="header">
+    <img id="dp" src="./themes/images/face0.jpg" alt="Priya"> </img>
+    <p>HI! I'm Priya, a Bangalore-based marketer</p>
+    <ul>
+      <li><a href="#">Strong Profile #1</a></li>
+      <li><a href="#">Strong Profile #2</a></li>
+      <li><a href="#">Strong profile #3</a></li>
+    </ul>
+  </div>
+  <div id="body">
+    <input type="email" placeholder="Your email">
+    <input type="submit">
+  </div>
 
 
 </body>
